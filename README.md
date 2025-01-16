@@ -10,6 +10,8 @@ Converting them from RGB to HSV color space
 Adding artificial noise to the hue and saturation channels
 Training the model to remove this noise
 
+Running this script as-is will train a basic UNet on CIFAR-10 color images. The script converts RGB images to HSV, adds Gaussian noise to the H and S channels, and trains the model to denoise these channels while preserving the V channel. This is a toy example primarily aimed at demonstrating the functionality and workflow; meaningful results may require extended training or fine-tuning.
+
 While this example may not produce high-quality colorization results in just a few training cycles, it provides the foundational structure and concepts you'd need for a more sophisticated implementation.
 
 ## To-do:
